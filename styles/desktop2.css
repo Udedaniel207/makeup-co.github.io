@@ -1,0 +1,93 @@
+/*setting the box sizing scheme for all the element in the html document*/
+html {box-sizing: border-box;}
+body{
+    background-color: rgb(252, 244, 241);
+}
+
+#home{
+    height:90vh;
+    background-image: url("../images/header.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0%;
+    padding-left:15em;
+    padding-right: 15em;
+}
+#home h2{
+    font-size: 5em;
+}
+.super{
+    font-size: .5em;
+}
+
+.small{
+    width:25em;
+    height:15em;
+}
+.small_2{
+    width:12em;
+    height:20em;
+}
+.img_3{
+    right:10em;
+}
+.img_4{
+    left:10em;
+}
+.header_text{
+    font-size: 1.1em;
+}
+#row-1 h3{
+    padding-left:5em;
+    padding-right: 5em;
+}
+.info_text{
+    padding-left:20em;
+    padding-right: 20em;
+}
+
+.c3{
+    margin-left: 3em;
+}
+#row-2{
+    height:45vh;
+}
+#p1{
+    background-position-y: top; 
+}
+#p2{
+    background-image: url("../images/pic7.jpg");
+}
+#p3{
+    background-position-y: 30%; 
+} 
+#p4{    
+    background-position-y: top; 
+}
+.t2{
+    padding:0em 4em;
+}
+#row-4{
+    flex-direction: column;
+    height:auto;
+}
+#data{
+    margin-left: 2em;
+}
+dt,dd{
+    border-bottom:1px solid white;
+    padding-bottom: .5em;
+    width:50vw;
+    padding-left: 1em;
+}
+#description{
+    font-size: 1em;
+}
+#description p{
+    margin-bottom: 3em;
+    width:40vw;
+}
+#description h3{
+    font-size: 4em;
+}

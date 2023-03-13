@@ -1,0 +1,530 @@
+/*setting the box sizing scheme for all the element in the html document*/
+html {box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(252, 244, 241);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0em 1em;
+    position: sticky;
+    top:0px;
+    right: 0px;
+    left:0px;
+    font-size: 1em;
+}
+nav ul {
+    display:block;
+    background-image: url("../images/menu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:3em;
+    height:3em;
+    border-radius: 50%;
+    
+}
+nav ul li{
+    text-indent: -9999px;
+    list-style-type: none;
+}
+@font-face {
+    font-family: Fancy;
+    src: url("../extra/TrajanPro-Regular_0.otf");
+}
+
+header h1{
+    font-family: Fancy, Georgia, 'Times New Roman', Times, serif;
+}
+.super{
+    font-family: 'Times New Roman', Times, serif;
+    vertical-align: super;
+    font-size: .7em;
+}
+#cart{
+    border-radius: 50%;
+    border:solid 2px black;
+    color: black;
+    width:1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home{
+    height:90vh;
+    background-image: url("../images/header.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 6em;
+    padding-top: 8em;
+    border-radius: 1em;
+    margin:0em .5em;
+    font-size: 1.2em;
+}
+#home h2{
+    font-size: 5em;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-stretch: semi-condensed;
+    font-weight: lighter;
+    line-height: 1em;
+    text-align: center;
+    /*text-shadow: 1px 1px 6px rgb(14, 14, 14);*/
+}
+.slant-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+#home p a{
+    background-color: white;
+    border-radius: 1.4em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding:.8em 2.6em;
+    text-decoration: none;
+    color:black;
+}
+#home p a:hover, #home p a:focus{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    padding:1em 3.2em;
+}
+#home p a:active{
+    box-shadow: 2px 2px 4px rgb(58, 58, 58);
+}
+#row-1{
+    height:110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 11em;
+    /*border-style: solid;
+    border-image:linear-gradient(50deg, rgb(253, 247, 245) 30%, rgb(0, 0, 0) 50%, 
+    rgb(253, 247, 245) 70%) 8  / 4px / 8px stretch;*/
+    margin:1em 0em;
+    position: relative;
+    padding-top: 0em;
+}
+.header_text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 0em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color:rgb(0, 0, 0);
+    font-size: .7em;
+}
+#row-1 h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+}
+.info_text{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    margin-top: -4em;
+    position: relative;
+    padding:3em;
+    font-size: .7em;
+}
+.contain_pic{
+    position: absolute;
+    height: 110vh;
+    top:0px;
+    right: 0px;
+    left:0px;
+    bottom:0px;
+    
+}
+.small{
+    display: flex;
+    position:absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-radius: 12px;
+    width:12em;
+    height:8em;
+    z-index: -1;
+}
+.small_2{
+    display: flex;
+    position:absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-radius: 12px;
+    width:8em;
+    height:12em;
+    z-index: -1;
+}
+.img_1{
+    background-color: blue;
+    right:2px;
+    background-image:url("../images/753bcd7d7f348d7863095712b7fea580.jpg") ;
+}
+.img_2{
+    background-image: url("../images/ba40b9452f05981b025e8251aa8b65d7.jpg");
+    background-color: yellow;
+    bottom: 2px;
+    
+}
+.img_3{
+    background-image: url("../images/pic2_mobile.jpg");
+    background-color: green;
+    right:10px;
+    top:10px;
+    
+}
+.img_4{
+    background-image: url("../images/seasons-2.webp");
+   background-color: rgb(4, 4, 81);
+   bottom: 20px;
+   left:10px;
+}
+.middle{
+    height: 70vh;
+    background-image: url("../images/atlantic-chamomile-hydrating-mask.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3em;
+}
+#row-2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    font-weight: lighter;
+    text-align: center;
+    padding:0em 1em;
+    padding-bottom: 0em;
+    height:auto;
+    position: relative;
+}
+#row-2 h4{
+    margin-bottom: .5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding:.2em;
+    
+    text-align: center;
+    font-size: 120%;
+}
+#row-2{
+    font-size: 2em;
+    line-height: 1.3em;
+}
+#procedure-text{
+    font-size: 1.1em;
+}
+
+.circle{
+    content: " ";
+    display: inline-block;
+    background-color: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width:2em;
+    height:2em;
+    z-index: -1;
+    vertical-align: middle;
+    margin:0em;
+}
+.c1{
+    float:left;
+    background-image: url("../images/highlights-1.webp");
+}
+.c2{
+    float: right;
+    background-image: url("../images/highlights-2.webp");
+}
+.c3{
+    float:left;
+    margin-right: -.2em;
+    background-image: url("../images/highlights-3.webp");
+}
+
+/*slide show*/
+.section{
+    margin: 4em 0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width:100vw;
+    height:100vh;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.slide{
+    width:500%;
+    height:100vh;
+    display: flex;
+}
+.slide input{
+    display: none;
+}                         
+.st{
+    width:20%;
+    transition:.8s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10em;
+    
+}
+.st .pic{
+    width:100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    padding: auto 4em;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.t1{
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+      
+}
+.t2{
+    display:flex;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    font-weight: lighter;
+    font-size: 6em;
+    padding:0em 0em;
+    text-align: center; 
+    justify-content: center;
+}
+#p1{
+    background-image: url("../images/seasons-2.webp");
+    padding-top: 25em;
+    background-position-y: top; 
+}
+#p2{
+    padding-top: 25em;
+    background-image: url("../images/pic7.jpg");
+}
+#p3{
+    padding-top: 25em;
+    background-image: url("../images/pic3_mobile.jpg");
+    background-position-y: 30%;
+}
+#p4{
+    padding-top: 25em;
+    background-image: url("../images/pic4_mobile.jpg");
+    background-position-y: top;
+}
+.nav-m{
+    position: absolute;
+    width:95vw;
+    margin-top:85vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-auto{
+    position:absolute;
+    width:100vw;
+    margin-top: 20em;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto label{
+    border:2px solid rgb(7, 7, 7);
+    padding:5px;
+    border-radius: 10px;
+    transition:1s ease-out;
+}
+#radio-01:checked ~ .first{
+    margin-left: 0;
+}
+#radio-02:checked ~ .first{
+    margin-left: -20%;
+}
+#radio-03:checked ~ .first{
+    margin-left: -40%;
+}
+#radio-04:checked ~.first{
+    margin-left: -60%;
+}
+.m-b1{
+    border:solid 2px rgb(255, 255, 255);
+    padding :8px;
+    border-radius: 16px;
+    margin:1em;
+    cursor: pointer;
+    transition: .8s ease-out;
+}
+.m-b1:hover{
+    background-color: rgb(255, 255, 255);
+}
+/*slide show*/
+
+#row-4{
+    display:flex;
+    flex-direction: column;
+    height:auto;
+    flex:1 1 auto;
+    background-color: rgb(143, 62, 37);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/ingredients.webp");
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: lighter ;
+    column-gap: .5em;
+    padding:1em;
+    border-radius: 20px;
+    padding-top: 4em;
+    font-size: 1em;
+}
+#description{
+    width:50vw;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+#description h3{
+    font-size: 3.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    line-height: 1em;
+    margin-bottom: .5em;
+}
+dl{
+    margin-bottom: 2em;
+    font-size: 1em;
+}
+dt{
+    font-weight: bold;
+    margin-bottom: .5em;
+    font-size: 1em;
+    border-bottom:1px solid white;
+}
+dd{
+    margin-left: 0px;
+    margin-bottom: .5em;
+    font-size: 1em;
+    border-bottom:1px solid white;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    
+    margin-top: 3em;
+    padding:1em;
+}
+footer #top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+    font-family: Fancy;
+    src: url("../extra/TrajanPro-Regular_0.otf");
+}
+#top p a{
+    text-decoration: none;
+}
+.texts{
+    margin-right: auto;
+    font-size: 2em;
+    font-family: Fancy, 'Times New Roman', Times, serif; 
+}
+.social{
+    height:2em;
+    margin: 0em .5em;
+}
+form ul li{
+    display: flex;
+    row-gap: 1em;
+}
+form ul li label{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+form ul li label input{
+    background-color: black;
+    margin-top: 1em;
+    display: block;
+    border:none;
+    border-bottom: solid 1.5px white;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+    outline: none;
+    padding-bottom: .5em;
+}
+#quicklinks{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:1 1 auto;
+    gap:1em;
+    padding-bottom: 3em;
+    margin-bottom: 2em;
+    
+}
+#quicklinks li{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width:40vw;
+    font-size: 1em;
+    
+}
+ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+.last{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(140, 140, 140);
+    text-transform: capitalize;
+    font-size:.7em;
+}
+.foot{
+    margin-bottom: 1em;
+    margin-top: 4em;
+}
